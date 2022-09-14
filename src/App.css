@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+.header
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 10fr 1fr 1fr;
+    grid-auto-rows: 30px;
+    grid-column-gap: 1em;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titles
+{
+    margin-top:2%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr ;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    border-bottom: 2px solid grey;
+    justify-items: center;
+    grid-auto-rows: 30px;
+    grid-column-gap: 1em;
+}
+.reset
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchtext
+{
+    justify-self: right;
+    align-self: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.productdisplay
+{
+    margin-top:2%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    justify-items: center;
+    grid-auto-rows:100px;
+    grid-column-gap: 1em;
+
+}
+.buy
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.cart
+{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-auto-rows: minmax(10px,auto);
+}
+.carttitle
+{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+.cartproducts
+{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns:3fr 1fr 1fr 1fr ;
+}
+.cartname
+{
+    display: grid;
+    align-items: center;
+    justify-items: left;
+    grid-template-columns:1fr 1fr 3fr ;
+}
+.quantity
+{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    border: 1px solid grey;
+    grid-column-gap: 10px;
+    padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.carttotal
+{
+    border: 1px solid black;
+    display: flex;
+    height: 220px;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-items:center;
+}
+.subtotal
+{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitbutton
+{
+    border-radius: 10px;
+    padding:5px;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    height: 40px;
 }
